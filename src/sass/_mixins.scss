@@ -1,0 +1,18 @@
+// screen sizes breakpoints
+@mixin scr_sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin scr_md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin scr_bg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}

@@ -1,21 +1,21 @@
 import React from 'react';
 import Item from './Item';
-
+import Spinner from './Spinner';
 
 const itemList = ({ items, loading }) => {
 
     if(loading) {
             return (
-                <p className="test">nic</p>
+               <Spinner />
             )
         } else {
         return (
-            <div className="container recipeList">
-                <ul className="recipeList__itemList">
+            <div className="container movieList">
+                <div className="d-flex flex-wrap">
                     {items.map( (item, i) => (
                         <Item key={i} item={items[i]} />
                     ))}
-                </ul>
+                </div>
             </div>
         )
     }

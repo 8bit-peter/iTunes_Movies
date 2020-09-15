@@ -2,14 +2,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="">
-      <div className="">
-        <header className="">
-          <h1 className="">
-              iTunes Top 100 Movies 
-          </h1>
-        </header>
-      </div>
+    <div className="navbar">
+        <h1 className="navbar__title text-center">
+            iTunes Top 100 Movies 
+        </h1>
     </div>
   );
 };

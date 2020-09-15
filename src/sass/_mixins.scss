@@ -1,4 +1,10 @@
 // screen sizes breakpoints
+@mixin scr_xsm {
+    @media (min-width: 1px) {
+        @content;
+    }
+}
+
 @mixin scr_sm {
     @media (min-width: 576px) {
         @content;

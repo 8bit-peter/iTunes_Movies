@@ -13,7 +13,7 @@ const itemList = ({ items, loading }) => {
             <div className="container movieList">
                 <div className="d-flex flex-wrap">
                     {items.map( (item, i) => (
-                        <Item key={i} item={items[i]} />
+                        <Item id={i} key={i} item={items[i]} />
                     ))}
                 </div>
             </div>

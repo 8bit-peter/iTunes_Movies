@@ -1,0 +1,15 @@
+@import "../variables";
+
+.navbar {
+    background: rgba(0,0,0,0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+
+    &__title {
+        width: 100%;
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 700;
+        color: $appleWhiteTxtColor;
+    }
+}

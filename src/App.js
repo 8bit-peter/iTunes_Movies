@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import ItemList from './components/ItemList';
+import ItemDetail from "./components/ItemDetail";
 import './App.scss';
 
 class App extends Component {
@@ -48,8 +50,22 @@ class App extends Component {
         <Navbar/>
         <div className="container-fluid container-fluid--hero">
           <div className="container-xl container-xl--mainContent">
-            <input className="movieSearch" type="text" name="text" placeholder="Search movie..." value={this.state.text} onChange={this.onChange}/>
-            <ItemList loading={this.state.loading} items={this.state.items}/>
+            <Router basename={`${process.env.PUBLIC_URL}/`}>
+              <Switch>
+
+                <Route exact path="/">
+                  <div>
+                    <input className="movieSearch" type="text" name="text" placeholder="Search movie by any word..." value={this.state.text} onChange={this.onChange}/>
+                    <ItemList loading={this.state.loading} items={this.state.items}/>
+                  </div>
+                </Route>
+
+                <Route path="/:id">
+                  <ItemDetail items={this.state.initialItems}/>
+                </Route>
+
+              </Switch>
+            </Router>
           </div>
         </div>
       </div>

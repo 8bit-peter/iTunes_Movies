@@ -6,6 +6,7 @@ const ItemDetail = ({ items, match}) => {
     // let item = this.props.items.find(items => items.id === this.props.match.params.id)
     // let item = items[0]
     console.log(items[0])
+    // console.log(items[0]["im:name"].label)
 
     return (
         <Fragment>

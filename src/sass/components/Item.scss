@@ -41,6 +41,11 @@
 
     &__poster {
         position: relative;
+        display: block;
+        height: 100%;
+        max-height: 402px;
+        background: url(https://via.placeholder.com/213x370);
+        background-size: contain;
 
         &__category {
             opacity: 0;

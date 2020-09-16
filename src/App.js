@@ -29,13 +29,19 @@ class App extends Component {
   }
 
   onChange = (e) => {
-    const inputValue = e.target.value
+    const inputValue = e.target.value.toLowerCase();
 
     let items;
     if(!inputValue) {
       items = this.state.initialItems
     } else {
-      items = this.state.initialItems.filter(item => item["im:name"]["label"].includes(inputValue) || item["summary"]["label"].includes(inputValue) || item["category"]["attributes"]["term"].includes(inputValue) )
+      items = this.state.initialItems.filter(item => {
+        const searchedValue = inputValue.toLowerCase();
+        const name = item["im:name"].label.toLowerCase();
+        const summary = item.summary.label.toLowerCase();
+        const category = item.category.attributes.term.toLowerCase();
+        return name.includes(searchedValue) || summary.includes(searchedValue) || category.includes(searchedValue)
+      })
     }
 
     this.setState({
@@ -55,7 +61,7 @@ class App extends Component {
 
                 <Route exact path="/">
                   <div>
-                    <input className="movieSearch" type="text" name="text" placeholder="Search movie by any word..." value={this.state.text} onChange={this.onChange}/>
+                    <input className="movieSearch" type="text" name="text" placeholder="Search movie by any word or category..." value={this.state.text} onChange={this.onChange}/>
                     <ItemList loading={this.state.loading} items={this.state.items}/>
                   </div>
                 </Route>

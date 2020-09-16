@@ -40,7 +40,7 @@ class ItemDetail extends Component {
     return (
       <div className="movieItemSingle d-flex">
           <div className="movieItemSingle__column movieItemSingle__column--poster">
-              <img className="card-img-top movieItemSingle__img" src={this.state.item[ "im:image" ][2][ "label" ]} alt={this.state.item["title"]["label"]}/>
+              <img className="card-img-top movieItemSingle__img" src={this.state.item[ "im:image" ][2][ "label" ].replace('113x170', '213x370')} alt={this.state.item["title"]["label"]}/>
           </div>
 
           <div className="movieItemSingle__column movieItemSingle__column--txt">

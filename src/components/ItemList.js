@@ -12,8 +12,12 @@ const itemList = ({ items, loading }) => {
         return (
             <div className="container movieList">
                 <div className="d-flex flex-wrap">
-                    {items.map( (item, i) => (
-                        <Item id={i} key={i} item={items[i]} />
+                    {items.map( item => (
+                        <Item
+                          id={item.id.attributes['im:id']}
+                          key={item.id.attributes['im:id']}
+                          item={item}
+                        />
                     ))}
                 </div>
             </div>

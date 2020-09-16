@@ -18,7 +18,6 @@ const Item = ({ item, id }) => {
 
             <div className="movieItem__content card-body d-flex flex-column align-content-center justify-content-between">
                 <h3 className="movieItem__content__title card-title">{item["title"]["label"]}</h3>
-                {/* <p className="movieItem__content__summary card-text">{item["summary"]["label"]}</p> */}
 
                 <Link to={`/${id}`}>
                     <button className="btn btn-secondary btn-block movieItem__comingSoonBtn">More info</button>

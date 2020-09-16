@@ -35,7 +35,7 @@ class App extends Component {
     if(!inputValue) {
       items = this.state.initialItems
     } else {
-      items = this.state.initialItems.filter(item => item["im:name"]["label"].includes(inputValue) || item["summary"]["label"].includes(inputValue))
+      items = this.state.initialItems.filter(item => item["im:name"]["label"].includes(inputValue) || item["summary"]["label"].includes(inputValue) || item["category"]["attributes"]["term"].includes(inputValue) )
     }
 
     this.setState({

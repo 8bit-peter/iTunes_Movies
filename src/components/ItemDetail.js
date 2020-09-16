@@ -38,14 +38,22 @@ class ItemDetail extends Component {
       return null;
     }
     return (
-      <>
-        <img src={this.state.item[ "im:image" ][2][ "label" ]} alt=""/>
-        <h1>{this.state.item[ "im:name" ][ "label" ]}</h1>
-        <p>{this.state.item[ "summary" ][ "label" ]}</p>
-        <Link to={`/`}>
-            <button className="btn btn-secondary btn-block movieItem__comingSoonBtn">BACK</button>
-        </Link>
-      </>
+      <div className="movieItemSingle d-flex">
+          <div className="movieItemSingle__column movieItemSingle__column--poster">
+              <img className="card-img-top movieItemSingle__img" src={this.state.item[ "im:image" ][2][ "label" ]} alt={this.state.item["title"]["label"]}/>
+          </div>
+
+          <div className="movieItemSingle__column movieItemSingle__column--txt">
+            <h1 className="movieItemSingle__title">{this.state.item[ "im:name" ][ "label" ]}</h1>
+            <p className="movieItemSingle__summary">{this.state.item[ "summary" ][ "label" ]}</p>
+
+            <video className="movieItemSingle__trailer" controls src={this.state.item[ "link" ][1][ "attributes" ][ "href" ]} type="video/mp4" />
+
+            <Link to={`/`}>
+                <button className="btn btn-secondary btn-block movieItem__comingSoonBtn">BACK</button>
+            </Link>
+          </div>
+      </div>
     )
   }
 }

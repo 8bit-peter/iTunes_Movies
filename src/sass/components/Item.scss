@@ -42,10 +42,17 @@
     &__poster {
         position: relative;
         display: block;
-        height: 100%;
-        max-height: 402px;
-        background: url(https://via.placeholder.com/213x370);
+        height: auto;
+        background: url(https://via.placeholder.com/213x320);
         background-size: contain;
+
+        @include scr_md {
+            max-height: 402px;
+        }
+
+        @media (min-width: 1200px) {
+            height: 100%;
+        }
 
         &__category {
             opacity: 0;
@@ -69,6 +76,8 @@
 
     .card-img-top.movieItem__img {
         transition: all .2s;
+        max-height: 100%;
+        display: block;
     }
 
     &.card:hover {

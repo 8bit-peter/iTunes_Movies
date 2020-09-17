@@ -6,9 +6,9 @@ const Item = ({ item, id }) => {
         <div className="movieItem card">
             <div className="movieItem__poster">
                 { item["im:image"][2]["label"] ? (
-                    <img className="movieItem__img--poster card-img-top movieItem__img" loading="lazy" src={item["im:image"][2]["label"].replace('113x170', '213x370')} alt=""/>
+                    <img className="movieItem__img--poster card-img-top movieItem__img" loading="lazy" src={item["im:image"][2]["label"].replace('113x170', '213x320')} alt=""/>
                 ) : (
-                    <img className="movieItem__img--poster card-img-top movieItem__img" loading="lazy" src="https://via.placeholder.com/213x370" alt="Placeholder"/>
+                    <img className="movieItem__img--poster card-img-top movieItem__img" loading="lazy" src="https://via.placeholder.com/213x320" alt="Placeholder"/>
                 )}
 
                 <p className="movieItem__poster__category">

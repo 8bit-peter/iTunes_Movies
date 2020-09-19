@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter} from 'react-router-dom';
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import Spinner from './Spinner'
 
 class ItemDetail extends Component {
 
@@ -35,7 +36,9 @@ class ItemDetail extends Component {
 
   render() {
     if(this.state.loading) {
-      return null;
+      return (
+        <Spinner />
+     )
     }
     return (
       <div className="movieItemSingle d-flex">

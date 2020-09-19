@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b08ef8cd2f3c06630cf48df7f0c23332",
+    "revision": "5388bcb5b3996497700e995691e4d4ba",
     "url": "/itunes_movies/index.html"
   },
   {
-    "revision": "4a106d742cca0c46b427",
+    "revision": "fc21535a191cc5d0c56e",
     "url": "/itunes_movies/static/css/main.2923df81.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/itunes_movies/static/js/2.042171a0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4a106d742cca0c46b427",
-    "url": "/itunes_movies/static/js/main.574466f9.chunk.js"
+    "revision": "fc21535a191cc5d0c56e",
+    "url": "/itunes_movies/static/js/main.17c5c0ed.chunk.js"
   },
   {
     "revision": "0c16bfe82d540bf6b10f",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/itunes_movies/static/css/main.2923df81.chunk.css",
-    "main.js": "/itunes_movies/static/js/main.574466f9.chunk.js",
-    "main.js.map": "/itunes_movies/static/js/main.574466f9.chunk.js.map",
+    "main.js": "/itunes_movies/static/js/main.17c5c0ed.chunk.js",
+    "main.js.map": "/itunes_movies/static/js/main.17c5c0ed.chunk.js.map",
     "runtime-main.js": "/itunes_movies/static/js/runtime-main.9bd65c06.js",
     "runtime-main.js.map": "/itunes_movies/static/js/runtime-main.9bd65c06.js.map",
     "static/js/2.042171a0.chunk.js": "/itunes_movies/static/js/2.042171a0.chunk.js",
     "static/js/2.042171a0.chunk.js.map": "/itunes_movies/static/js/2.042171a0.chunk.js.map",
     "index.html": "/itunes_movies/index.html",
-    "precache-manifest.ca2766287b1294c2d468ec62a3d546c8.js": "/itunes_movies/precache-manifest.ca2766287b1294c2d468ec62a3d546c8.js",
+    "precache-manifest.6844287471c048f76e2393b574c72116.js": "/itunes_movies/precache-manifest.6844287471c048f76e2393b574c72116.js",
     "service-worker.js": "/itunes_movies/service-worker.js",
     "static/css/main.2923df81.chunk.css.map": "/itunes_movies/static/css/main.2923df81.chunk.css.map",
     "static/js/2.042171a0.chunk.js.LICENSE.txt": "/itunes_movies/static/js/2.042171a0.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9bd65c06.js",
     "static/js/2.042171a0.chunk.js",
     "static/css/main.2923df81.chunk.css",
-    "static/js/main.574466f9.chunk.js"
+    "static/js/main.17c5c0ed.chunk.js"
   ]
 }
